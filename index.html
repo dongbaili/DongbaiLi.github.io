@@ -13,12 +13,22 @@
             justify-content: space-between;
             margin: 10px 0;
         }
+        .subsubsection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
         .image {
-            width: 200px;
+            flex: 0 0 50%;
             border: 1px solid #333;
             text-align: center;
             padding: 5px;
             margin: 5px;
+        }
+        .image img {
+            max-width: 100%;
+            max-height: 100%;
         }
     </style>
 </head>
@@ -26,6 +36,7 @@
     <div class="section">
         <h2>n=500</h2>
         <div class="subsection">
+            <h3>r=2.5</h3>
             <div class="image">
                 <img src="./n=500/S->V_r=2.5.png" alt="S->V">
                 <p>S->V</p>
@@ -44,6 +55,7 @@
             </div>
         </div>
         <div class="subsection">
+            <h3>r=1.5</h3>
             <div class="image">
                 <img src="./n=500/S->V_r=1.5.png" alt="S->V">
                 <p>S->V</p>
@@ -56,7 +68,7 @@
                 <img src="./n=500/V->S_r=1.5.png" alt="V->S">
                 <p>V->S</p>
             </div>
-            <div class "image">
+            <div class="image">
                 <img src="./n=500/collinearity_r=1.5.png" alt="collinearity">
                 <p>collinearity</p>
             </div>
@@ -65,6 +77,7 @@
     <div class="section">
         <h2>n=1000</h2>
         <div class="subsection">
+            <h3>r=2.5</h3>
             <div class="image">
                 <img src="./n=1000/S->V_r=2.5.png" alt="S->V">
                 <p>S->V</p>
@@ -83,6 +96,7 @@
             </div>
         </div>
         <div class="subsection">
+            <h3>r=1.5</h3>
             <div class="image">
                 <img src="./n=1000/S->V_r=1.5.png" alt="S->V">
                 <p>S->V</p>
@@ -95,16 +109,16 @@
                 <img src="./n=1000/V->S_r=1.5.png" alt="V->S">
                 <p>V->S</p>
             </div>
-            <div class "image">
+            <div class="image">
                 <img src="./n=1000/collinearity_r=1.5.png" alt="collinearity">
                 <p>collinearity</p>
             </div>
         </div>
-        <!-- 同样的结构，按照上面的示例添加内容 -->
     </div>
     <div class="section">
         <h2>n=2000</h2>
         <div class="subsection">
+            <h3>r=2.5</h3>
             <div class="image">
                 <img src="./n=2000/S->V_r=2.5.png" alt="S->V">
                 <p>S->V</p>
@@ -123,6 +137,7 @@
             </div>
         </div>
         <div class="subsection">
+            <h3>r=1.5</h3>
             <div class="image">
                 <img src="./n=2000/S->V_r=1.5.png" alt="S->V">
                 <p>S->V</p>
@@ -135,13 +150,13 @@
                 <img src="./n=2000/V->S_r=1.5.png" alt="V->S">
                 <p>V->S</p>
             </div>
-            <div class "image">
+            <div class="image">
                 <img src="./n=2000/collinearity_r=1.5.png" alt="collinearity">
                 <p>collinearity</p>
             </div>
         </div>
-        <!-- 同样的结构，按照上面的示例添加内容 -->
     </div>
+    <!-- 添加其他两个大段，每个大段的结构与上面相似 -->
 </body>
 </html>
 
