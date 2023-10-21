@@ -1,6 +1,6 @@
 # Using MLP as M model
 ## Only decorrelation loss
-### "single double triple" 对应层数
+### "single double triple" 对应MLP层数
 ### "combine" 代表加入prediction loss 
 n=500时表现较好，n=2000时很不稳定
 
