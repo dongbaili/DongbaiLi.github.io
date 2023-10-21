@@ -1,5 +1,9 @@
 # Using MLP as M model
 ## Only decorrelation loss
+### "single double triple" 对应层数
+### "combine" 代表加入prediction loss 
+n=500时表现较好，n=2000时很不稳定
+
 ### n=500 r_train=2.5
 #### collinearity
 <img src="MLP/collinearity_n=500.png" alt="" width="400">
