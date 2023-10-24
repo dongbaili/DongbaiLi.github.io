@@ -126,7 +126,7 @@ def main(args, round, logger):
     
     # baseline2: DWR
     dwr_ans = []
-    
+    """
     logger.info('Start training DWR...')
     model = LinearRegression()
     weight = torch.ones(n, 1, device=device)        
@@ -141,7 +141,7 @@ def main(args, round, logger):
             Yp = model.predict(X_test)
             b.append(mean_squared_error(Y_test, Yp))
         dwr_ans.append(b)
-    
+    """
     return ans, linear_ans, dwr_ans
 
 if __name__ == "__main__":
@@ -170,9 +170,9 @@ if __name__ == "__main__":
     for iter, ans in zip(x, mean_neg_RMSE):
         print(f"iter{iter}: neg_RMSE = {ans}")
     print(f"linear neg_RMSE = {mean_linear}")
-    np.save(f'./RMSEs/combine/{args.mode}/n={args.n}_r={args.r_train}',mean_neg_RMSE)
-    np.save(f'./RMSEs/combine/{args.mode}/DWR_n={args.n}_r={args.r_train}',mean_dwr)
-    np.save(f'./RMSEs/combine/{args.mode}/linear_n={args.n}_r={args.r_train}',[mean_linear]*len(x))
+    np.save(f'./RMSEs/combine/{args.mode}/n={args.n}_k={args.k}',mean_neg_RMSE)
+    # np.save(f'./RMSEs/combine/{args.mode}/DWR_n={args.n}_r={args.r_train}',mean_dwr)
+    # np.save(f'./RMSEs/combine/{args.mode}/linear_n={args.n}_r={args.r_train}',[mean_linear]*len(x))
     # plt.figure(dpi = 240)
     # plt.plot(x, mean_neg_RMSE, label = 'new method')
     # plt.plot(x, mean_dwr, label = 'dwr')

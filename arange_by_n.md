@@ -1,12 +1,3 @@
-# Using MLP as M model
-## configurations:
-- double layers, r_train=2.5
-- hidden layer size = 10
-- loss = decorr_loss +  k * predict_loss
-## conclusions:
-- 加入fitting loss让表现更稳定
-- 除了n较大时的S_|_V,S->V, 其余setting下都比DWR明显好
-- 超参数k影响比较小
 ### n=100
 <div style="display: flex;">
     with DWR
@@ -98,6 +89,3 @@
     <img src="final/V->S_n=2000.png" alt="" width="400">
     <img src="final/collinearity_n=2000.png" alt="" width="400">
 </div>
-
-
-

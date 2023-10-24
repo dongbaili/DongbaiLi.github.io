@@ -64,10 +64,9 @@ def Weight_model(X, Y, epochs = 2, cov_mask=None, order=1, num_steps = 5000, lr 
         
         independ_loss, balance_loss, loss_s, loss_2 = decorr_loss(X, weight, cov_mask, order=order)
         
-        # predict_loss, r_loss, r_weight = p_model.train_and_test(X, Y, weight)
-        # loss = independ_loss +  k * predict_loss
-        
-        loss = independ_loss
+        predict_loss, r_loss, r_weight = p_model.train_and_test(X, Y, weight)
+        loss = independ_loss +  k * predict_loss
+        # loss = independ_loss
         loss.backward()
         optimizer.step()
         if (i+1) % iter_print == 0:
@@ -75,8 +74,8 @@ def Weight_model(X, Y, epochs = 2, cov_mask=None, order=1, num_steps = 5000, lr 
             record /= np.sum(record) # normalize: weights sum up to 1
             weight_list.append(record)
             if (i+1) % (iter_print*10) == 0:
-                print(f"iter{i+1}: Decorrelation loss:{independ_loss} Loss: {loss}")
-                # print(f"iter{i+1}: Decorrelation loss:{independ_loss} predict_loss:{predict_loss} Loss: {loss}")
+                # print(f"iter{i+1}: Decorrelation loss:{independ_loss} Loss: {loss}")
+                print(f"iter{i+1}: Decorrelation loss:{independ_loss} predict_loss:{predict_loss} Loss: {loss}")
             # record the corr of loss and weight
             # correlation_coefficient = np.corrcoef(r_loss.detach().numpy().T, (r_weight**2).detach().numpy().T)[0,1]
             # corr_list.append(correlation_coefficient) 

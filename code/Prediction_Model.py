@@ -14,8 +14,8 @@ class PredictionModel(nn.Module):
         return self.linear(x)
     
     def train_and_test(self, X, Y, weight):
-        weight_clone =  weight.detach().clone()
-        weight_clone = (weight_clone**2) / (weight_clone**2).sum()
+        weight = (weight**2)
+        weight_clone = weight.detach().clone()
         self.train()
         # train {epochs} steps
         for epoch in range(self.epochs):
@@ -28,6 +28,6 @@ class PredictionModel(nn.Module):
         # return prediction loss
         output = self.forward(X)
         loss = self.criterion(output, Y, reduction='none')
-        weighted_loss = (loss * torch.max(weight_clone) - loss * weight_clone).mean()
+        weighted_loss = (loss * torch.max(weight) - loss * weight).mean()
         return weighted_loss, loss, weight
     
