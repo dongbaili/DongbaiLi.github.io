@@ -1,17 +1,10 @@
 ### S->V
-n = 100
+
 <div style="display: flex;">
-    with DWR
+    n = 100
     <img src="final/S->V_n=100.png" alt="" width="400">
-    without DWR
-    <img src="final/S->V_n=100_withoutDWR.png" alt="" width="400">
-</div>
-n = 200
-<div style="display: flex;">
-    with DWR
+    n = 200
     <img src="final/S->V_n=200.png" alt="" width="400">
-    without DWR
-    <img src="final/S->V_n=200_withoutDWR.png" alt="" width="400">
 </div>
 <div style="display: flex;">
     n = 500
@@ -27,19 +20,11 @@ n = 200
 </div>
 
 ### V->S
-n = 100
 <div style="display: flex;">
-    with DWR
+    n = 100
     <img src="final/V->S_n=100.png" alt="" width="400">
-    without DWR
-    <img src="final/V->S_n=100_withoutDWR.png" alt="" width="400">
-</div>
-n = 200
-<div style="display: flex;">
-    with DWR
+    n = 200
     <img src="final/V->S_n=200.png" alt="" width="400">
-    without DWR
-    <img src="final/V->S_n=200_withoutDWR.png" alt="" width="400">
 </div>
 <div style="display: flex;">
     n = 500
@@ -55,14 +40,12 @@ n = 200
 </div>
 
 ### S_|_V
-n = 100
 <div style="display: flex;">
-    with DWR
+    n = 100
     <img src="final/S_|_V_n=100.png" alt="" width="400">
-    without DWR
-    <img src="final/S_|_V_n=100_withoutDWR.png" alt="" width="400">
+    n = 200
+    <img src="final/S_|_V_n=200.png" alt="" width="400">
 </div>
-n = 200
 <div style="display: flex;">
     with DWR
     <img src="final/S_|_V_n=200.png" alt="" width="400">
@@ -83,19 +66,11 @@ n = 200
 </div>
 
 ### collinearity
-n = 100
 <div style="display: flex;">
-    with DWR
+    n = 100
     <img src="final/collinearity_n=100.png" alt="" width="400">
-    without DWR
-    <img src="final/collinearity_n=100_withoutDWR.png" alt="" width="400">
-</div>
-n = 200
-<div style="display: flex;">
-    with DWR
+    n = 200
     <img src="final/collinearity_n=200.png" alt="" width="400">
-    without DWR
-    <img src="final/collinearity_n=200_withoutDWR.png" alt="" width="400">
 </div>
 <div style="display: flex;">
     n = 500
