@@ -1,4 +1,8 @@
 ## See the coefficients of lienar model
+### conclusions:
+1. Average Negative RMSE最小 对应 模型参数对v的权重小
+2. Decorrelation loss越小并不保证模型参数对v的权重更小
+   - 甚至所有情况下Best case都有较大的Decorrelation loss
 ### S->V
 n=100
 <div style="display: flex;">
