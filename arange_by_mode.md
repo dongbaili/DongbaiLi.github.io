@@ -47,12 +47,6 @@
     <img src="final/S_|_V_n=200.png" alt="" width="400">
 </div>
 <div style="display: flex;">
-    with DWR
-    <img src="final/S_|_V_n=200.png" alt="" width="400">
-    without DWR
-    <img src="final/S_|_V_n=200_withoutDWR.png" alt="" width="400">
-</div>
-<div style="display: flex;">
     n = 500
     <img src="final/S_|_V_n=500.png" alt="" width="400">
     n = 1000
