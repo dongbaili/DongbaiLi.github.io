@@ -1,3 +1,7 @@
+- 在一部分setting下我们的方法更好，例如S->V小样本量和collinearity。
+- 在其余setting下表现比较接近，很难总结规律
+- 容易理解的是，在这些setting下往往加fitting loss比不加的明显好
+- 如果没有明显比不加fitting loss好，那么就不应期望比fake dwr版本明显好
 ### S->V
 
 <div style="display: flex;">
