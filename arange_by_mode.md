@@ -1,12 +1,13 @@
-## 结果
+## 使用MLP版本
+### 结果
 - 在一部分setting下我们的方法更好，例如S->V小样本量和collinearity。
 - 在其余setting下表现比较接近，很难总结规律
-- 我们的方法的曲线波动会更小
+- 我们的方法依然更稳定
 ## 一些想法
-- 容易理解的是，好setting下往往加fitting loss比不加的明显好
-- 如果没有明显比"double"好，那么就不应期望比fake dwr版本明显好
-- 超参数相同的情况下，我们的方法decorelation loss往往更大
-- 我们的方法fitting loss几乎在训练过程中不变/逐渐变大
+- 只有加fitting loss比不加要明显好，才有可能比加反过来的fitting loss明显好
+- 和离散情况一致，我们的方法decorelation loss往往更大
+ 。fitting loss几乎在训练过程中不变/逐渐变大
+- 看起来加入我们设计的fitting loss对于MLP版本提升比较小。而对于离散版本的提升更大。
 ### S->V
 
 <div style="display: flex;">
