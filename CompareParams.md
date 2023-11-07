@@ -1,7 +1,37 @@
 左侧是我们的版本，右侧是fake dwr版本，最右侧是dwr
 
 1000,4000,12000对应迭代次数
-## 优势setting分析
+## discrete版本
+### (collinearity n=100)
+<img src="discrete/collinearity_n=100.png" alt="" width="300">
+<div style="display: flex;">
+    <img src="discreteparams/collinearity/true_n=100_1000.png" alt="" width="300">
+    <img src="discreteparams/collinearity/n=100_1000.png" alt="" width="300">
+    <img src="params/collinearity/n=100_best.png" alt="" width="300">
+</div>
+<div style="display: flex;">
+    <img src="discreteparams/collinearity/true_n=100_4000.png" alt="" width="300">
+    <img src="discreteparams/collinearity/n=100_4000.png" alt="" width="300">
+    <img src="params/collinearity/n=100_4000.png" alt="" width="300">
+</div>
+
+### (S->V n=100)
+<div style="display: flex;">
+    <img src="discrete/S->V_n=100.png" alt="" width="300">
+</div>
+<div style="display: flex;">
+    <img src="discreteparams/S->V/true_n=100_1000.png" alt="" width="300">
+    <img src="discreteparams/S->V/n=100_1000.png" alt="" width="300">
+    <img src="params/S->V/n=100_best.png" alt="" width="300">
+</div>
+<div style="display: flex;">
+    <img src="discreteparams/S->V/true_n=100_4000.png" alt="" width="300">
+    <img src="discreteparams/S->V/n=100_4000.png" alt="" width="300">
+    <img src="params/S->V/n=100_4000.png" alt="" width="300">
+</div>
+
+
+## MLP版本 我们的优势setting
 ### (collinearity n=100)
 <div style="display: flex;">
     <img src="MLPparams/collinearity/n=100_1000.png" alt="" width="300">
