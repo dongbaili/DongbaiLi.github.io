@@ -30,9 +30,11 @@
     <img src="params/S->V/n=100_4000.png" alt="" width="300">
 </div>
 
+**我们的方法不仅在V上的权重更小了，在S上的分布也和DWR best更像，且随迭代次数稳定。**
 
 ## MLP版本 我们的优势setting
 ### (collinearity n=100)
+<img src="final/collinearity_n=100.png" alt="" width="300">
 <div style="display: flex;">
     <img src="MLPparams/collinearity/n=100_1000.png" alt="" width="300">
     <img src="fakeparams/collinearity/n=100_1000.png" alt="" width="300">
@@ -55,7 +57,6 @@
 1. 我们的方法能把V上的权重去除的更干净（但似乎仅限这个setting）
 ### (collinearity n=500)同理
 <div style="display: flex;">
-    <img src="final/collinearity_n=100.png" alt="" width="300">
     <img src="final/collinearity_n=500.png" alt="" width="300">
 </div>
 <div style="display: flex;">
@@ -86,7 +87,7 @@
     <img src="params/S->V/n=100_12000.png" alt="" width="300">
 </div>
 
-## 劣势setting分析
+## 劣势setting
 
 ### (S_|_V n=100)
 <div style="display: flex;">
